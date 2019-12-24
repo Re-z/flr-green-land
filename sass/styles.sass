@@ -1,0 +1,150 @@
+
+@import 'not-compiling/reset'
+$desc: 1366
+$tab: 1024
+$mob: 760
+$primaryColor: #00AA80
+$secondaryColor: #1A2B35
+=r($width)
+    @media screen and (max-width: $width + 'px')
+        @content
+
+*
+    box-sizing: border-box
+    transition: .25s
+::selection
+    color: white
+    background: $primaryColor
+body
+    font-family: 'Open Sans', sans-serif
+    padding-top: 94px
+.container
+    width: 1366px
+    padding: 0 20px
+    margin: 0 auto
+    +r($desc)
+        width: 100%
+.btn
+    background: $primaryColor
+    border-radius: 102px
+    color: white
+    text-decoration: none
+    &:hover
+        background: darkorange
+.primary-color
+    color: $primaryColor
+.font-bold
+    font-weight: bold
+.header
+    background: $secondaryColor
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+    padding: 20px 0
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__btn
+        font-size: 18px
+        padding: 18px 68px
+        display: inline-block
+        margin-right: 20px
+    &__box
+        display: flex
+        align-items: center
+    &__flag
+        padding: 0 15px 0 10px
+        position: relative
+        display: inline-block
+        cursor: pointer
+        &:after
+            display: block
+            content: ''
+            width: 8px
+            height: 6px
+            background: url(../img/select-arr.png)
+            position: absolute
+            right: 15px
+            top: 50%
+            margin-top: -3px
+            pointer-events: none
+    &__flag-item
+        display: flex
+        align-items: center
+        padding-left: 10px
+        padding-right: 20px
+        text-decoration: none
+        &_dropdown
+            margin-bottom: 7px
+            &:last-of-type
+                margin-bottom: 0
+            &:hover
+                background: #236a94
+            img
+                margin-left: 10px
+        span
+            display: inline-block
+            margin-left: 7px
+            color: white
+            font-size: 12px
+            text-transform: uppercase
+    &__flag-dropdown
+        position: absolute
+        opacity: 0
+        top: -200px
+        left: 0
+        background: #1A2B35
+        width: 100%
+        transform: scale(0)
+        &.is-visible
+            opacity: 1
+            top: 40px
+            transform: scale(1)
+.title
+    color: white
+    text-transform: uppercase
+.promo
+    background-size: cover
+    background: $secondaryColor
+    &__wrapper
+
+    &__container
+        background: url("../img/promo-bg.png") center center no-repeat
+        padding-top: 162px
+        padding-bottom: 182px
+        display: flex
+        justify-content: space-between
+    &__title
+        font-size: 40px
+        margin-bottom: 16px
+        letter-spacing: 2px
+        line-height: 54px
+    &__subtitle
+        font-size: 42px
+        margin-bottom: 23px
+        letter-spacing: 3px
+        line-height: 57px
+    &__lasttitle
+        font-size: 62px
+        line-height: 84px
+        letter-spacing: 6px
+    &__left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__small
+        display: block
+        font-size: 14px
+        color: #617C9A
+        max-width: 634px
+        line-height: 19px
+    &__right
+
+.form
+    height: 508px
+    width: 350px
+    outline: 1px solid red
+
