@@ -1,6 +1,6 @@
 
 @import 'not-compiling/reset'
-$desc: 1366
+$desc: 1140
 $tab: 1024
 $mob: 760
 $primaryColor: #00AA80
@@ -19,7 +19,8 @@ body
     font-family: 'Open Sans', sans-serif
     padding-top: 94px
 .container
-    width: 1366px
+    width: 1140px
+
     padding: 0 20px
     margin: 0 auto
     position: relative
@@ -31,7 +32,7 @@ body
     color: white
     text-decoration: none
     &:hover
-        background: darkorange
+        background: #067D60
 .primary-color
     color: $primaryColor
 .font-bold
@@ -110,11 +111,13 @@ body
     text-transform: uppercase
 .promo
     background-size: cover
-    background: $secondaryColor
+    background:  url("../img/promo-bg.png") center top no-repeat, $secondaryColor
+    -webkit-background-size: cover
+    background-size: cover
     &__wrapper
 
     &__container
-        background: url("../img/promo-bg.png") center center no-repeat
+
         padding-top: 162px
         padding-bottom: 182px
         display: flex
@@ -152,8 +155,12 @@ body
 
 .main
     padding-top: 128px
-    //padding: 128px 0
-    background: $secondaryColor
+    padding: 128px 0
+    background:
+    background:  url("../img/layer.png") center bottom no-repeat, $secondaryColor
+    //-webkit-background-size: cover
+    background-size: 100%
+
 
 .why
     margin-bottom: 180px
@@ -199,9 +206,8 @@ body
         margin-bottom: 77px
     &__box
         height: 900px //
-        padding-bottom: 100px
-        background: url("../img/layer.png")
-        background-size: cover
+        //padding-bottom: 100px
+        //background-size: cover
         position: relative
     &__box-container
         height: inherit
@@ -292,6 +298,16 @@ body
         &_reverse
             right: auto
             left: 0
+    &__btn
+        position: absolute
+        right: 4%
+        bottom: 50px
+        text-transform: uppercase
+        font-size: 18px
+        color: white
+        font-weight: bold
+        padding: 18px 68px
+
 
 @keyframes rotation
     from
