@@ -9,20 +9,52 @@ block head
 block content
 	include _header.pug
 	.promo
-		.promo__wrapper
-			.container.promo__container
-				.promo__left
-					.promo__left-box
-						h1.promo__title.title Trade smarter
-						h2.promo__subtitle.title Trade at <span class="primary-color font-bold">Monfex</span>
-						h2.promo__lasttitle.title Get <span class="primary-color font-bold"> 20% </span> bonus <br> on your deposit
-					small.promo__small * These will be the terms of the bonus These will be the terms of the bonus These will be the        terms of the bonus These will be the terms of the bonus
-				.promo__right
-					.form
+		.container.promo__container
+			.promo__left
+				.promo__left-box
+					h1.promo__title.title Trade smarter
+					h2.promo__subtitle.title Trade at <span class="primary-color font-bold">Monfex</span>
+					h2.promo__lasttitle.title Get <span class="primary-color font-bold"> 20% </span> bonus <br> on your deposit
+				small.promo__small * These will be the terms of the bonus These will be the terms of the bonus These will be the        terms of the bonus These will be the terms of the bonus
+			.promo__right
+				.form
+	.main
+		.container.main__container
+			.why
+				h2.title.why__title Why Choose Monfex?
+				.why__box
+					mixin why-item(title, text)
+						.why__item
+							h3.why__item-title=title
+							p.why__item-text=text
+					+why-item('Monfex is Top Author at TradingView!', 'We are trusted professional financial analytic team providing traders and investors with real-time trading signals and market analysis')
+					+why-item('Monfex offers Risk-Free Trading at Demo Account', 'Get a 1 BTC to Demo account to practice your strategy. Develop a Trading Plan. Stop Losing Money  and then switch to Real Account')
+					+why-item('Monfex is trusted by more than 10 000 traders', 'More than 10,000 professional traders and beginners all over the world chose Monfex. What are you waiting for?')
+					+why-item('Monfex is Top Author at TradingView!', 'We are trusted professional financial analytic team providing traders and investors with real-time trading signals and market analysis ')
+					+why-item('Monfex offers Risk-Free Trading at Demo Account', 'Get a 1 BTC to Demo account to practice your strategy. Develop a Trading Plan. Stop Losing Money  and then switch to Real Account')
+					+why-item('Monfex is trusted by more than 10 000 traders', 'More than 10,000 professional traders and beginners all over the world chose Monfex. What are you waiting for?')
 
 
+		.steps
+			.container
+				h2.steps__title Our mission is to show you that crypto trading can be the most captivating part of your life.
+			.steps__box
+				.container.steps__box-container
+					h3.steps__box-title.title Here 3 steps to follow...
+					.steps__item.steps__item_register
+						h4.steps__item-title REGISTER
+						p.steps__item-text Open Account for free in just a few minutes.
+						img.steps__item-img(src="img/register.png" alt="")
 
+					.steps__item.steps__item_practice
+						h4.steps__item-title PRACTICE
+						p.steps__item-text Master your skills with a practice account
+						img.steps__item-img.steps__item-img_reverse(src="img/practice.png" alt="")
 
+					.steps__item.steps__item_deposit
+						h4.steps__item-title DEPOSIT & TRADE
+						p.steps__item-text Top 12 coins for your ultimate trading
+						img.steps__item-img(src="img/deposit.png" alt="")
 
 
 
