@@ -13,7 +13,26 @@
     <div id="app">
     </div>
     <script src="js/app.js"></script>
-    <script src="js/lazyload.min.js"></script>
-    <script>new LazyLoad();</script>
+    <script src="js/lazyload.min.js"></script><script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <script src="js/scriptForm.js"></script>
+    <script>
+      var srcUtils = "pl/js/intlTel/js/utils.js";
+      var successUrl = 'https://www.monfex.com/ru/register/success';
+      
+    </script>
+    <script>new LazyLoad();</script><link rel="stylesheet" href="pl/css/select2.css">
+<link rel="stylesheet" href="pl/css/form.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      	// form init
+      	const regFormContainer = document.querySelectorAll('._mnfx-form-container');
+      	if (regFormContainer.length > 0) {
+      		for (let i = 0; i < regFormContainer.length; i++) {
+      			settingRegisterForm(regFormContainer[i], {fname: true});
+      		}
+      		}
+      	})
+    </script>
   </body>
 </html>

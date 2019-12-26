@@ -12,7 +12,7 @@ $secondaryColor: #1A2B35
 
 *
     box-sizing: border-box
-    transition: .25s
+    //transition: .25s
 ::selection
     color: white
     background: $primaryColor
@@ -20,6 +20,7 @@ body
     font-family: 'Open Sans', sans-serif
     padding-top: 94px
     background: $secondaryColor
+    min-width: 320px
     +r($mob)
         padding-top: 76px
         padding-bottom: 85px //due to cta fixed btn
@@ -36,6 +37,7 @@ body
     border-radius: 102px
     color: white
     text-decoration: none
+    transition: .25s
     &:hover
         background: #067D60
 .primary-color
@@ -202,11 +204,38 @@ body
     &__right
         +r($mob)
             margin-top: 40px
-.form
-    height: 508px
+.form-wrapper
+    min-height: 508px
     width: 350px
-    outline: 1px solid red
-    //margin: 0 auto
+    background: #263740
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+    border-radius: 4px
+    padding-top: 60px
+    position: relative
+
+    +r($mob)
+        max-width: 500px
+        width: 100%
+        margin: 0 auto
+    &_footer
+        +r($tab)
+            max-width: 500px
+            width: 100%
+            margin: 40px auto 0 auto
+
+    &__title
+        position: absolute
+        top: 30px
+        left: 50%
+        transform: translate(-50%)
+        color: white
+        font-size: 25px
+        width: 100%
+        text-align: center
+        font-weight: bold
+#formWrapperFooter
+
+
 .main
     //padding-top: 128px
     padding: 128px 0
@@ -503,7 +532,7 @@ body
         height: 63px
 .out
     position: relative
-    margin-top: 120px
+    padding-top: 120px
     overflow-x: hidden
     +r($tab)
         overflow-x: auto
