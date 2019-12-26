@@ -8,6 +8,8 @@ block head
 
 block content
 	include _header.pug
+	.fixed-cta
+		a(href="#").btn.fixed-cta__btn Start now!
 	.promo
 		.container.promo__container
 			.promo__left
@@ -42,19 +44,42 @@ block content
 				.container.steps__box-container
 					h3.steps__box-title.title Here 3 steps to follow...
 					.steps__item.steps__item_register
-						h4.steps__item-title REGISTER
-						p.steps__item-text Open Account for free in just a few minutes.
-						img.steps__item-img(src="img/register.png" alt="")
+							img.steps__item-img(data-src="img/register.png" alt="")
+							h4.steps__item-title REGISTER
+							p.steps__item-text Open Account for free in just a few minutes.
 
 					.steps__item.steps__item_practice
-						h4.steps__item-title PRACTICE
-						p.steps__item-text Master your skills with a practice account
-						img.steps__item-img.steps__item-img_reverse(src="img/practice.png" alt="")
+							img.steps__item-img.steps__item-img_reverse(data-src="img/practice.png" alt="")
+							h4.steps__item-title PRACTICE
+							p.steps__item-text Master your skills with a practice account
 
 					.steps__item.steps__item_deposit
-						h4.steps__item-title DEPOSIT & TRADE
-						p.steps__item-text Top 12 coins for your ultimate trading
-						img.steps__item-img(src="img/deposit.png" alt="")
+							img.steps__item-img(data-src="img/deposit.png" alt="")
+							h4.steps__item-title DEPOSIT & TRADE
+							p.steps__item-text Top 12 coins for your ultimate trading
 					a.btn.steps__btn(href="#") Start Now
+	.footer
+		.accept
+			.container
+				h2.title.title_footer We accept
+				.accept__imgs
+					img(data-src="img/visa.png" alt="").accept__visa
+					img(data-src="img/mastercard.svg" alt="").accept__master
+					img(data-src="img/btc.svg" alt="").accept__btc
+					img(data-src="img/eth.png" alt="").accept__eth
+		.out
+			.container.out__container
+				img.out__img(data-src="img/screen.jpg" alt="")
+				.form
+
+
+		.trust
+			.container
+				h2.title.title_footer Traders trust us
+				.trust__imgs
+					img(src="" data-src="img/trustpilot.png" alt="")
+					img(data-src="img/g2.png" alt="")
+					img(data-src="img/review.png" alt="")
+
 
 

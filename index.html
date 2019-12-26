@@ -31,6 +31,7 @@
           </div>
         </div>
       </header>
+      <div class="fixed-cta"><a class="btn fixed-cta__btn" href="#">Start now!</a></div>
       <div class="promo">
         <div class="container promo__container">
           <div class="promo__left">
@@ -84,23 +85,44 @@
           <div class="steps__box">
             <div class="container steps__box-container">
               <h3 class="steps__box-title title">Here 3 steps to follow...</h3>
-              <div class="steps__item steps__item_register">
+              <div class="steps__item steps__item_register"><img class="steps__item-img" data-src="img/register.png" alt="">
                 <h4 class="steps__item-title">REGISTER</h4>
-                <p class="steps__item-text">Open Account for free in just a few minutes.</p><img class="steps__item-img" src="img/register.png" alt="">
+                <p class="steps__item-text">Open Account for free in just a few minutes.</p>
               </div>
-              <div class="steps__item steps__item_practice">
+              <div class="steps__item steps__item_practice"><img class="steps__item-img steps__item-img_reverse" data-src="img/practice.png" alt="">
                 <h4 class="steps__item-title">PRACTICE</h4>
-                <p class="steps__item-text">Master your skills with a practice account</p><img class="steps__item-img steps__item-img_reverse" src="img/practice.png" alt="">
+                <p class="steps__item-text">Master your skills with a practice account</p>
               </div>
-              <div class="steps__item steps__item_deposit">
+              <div class="steps__item steps__item_deposit"><img class="steps__item-img" data-src="img/deposit.png" alt="">
                 <h4 class="steps__item-title">DEPOSIT & TRADE</h4>
-                <p class="steps__item-text">Top 12 coins for your ultimate trading</p><img class="steps__item-img" src="img/deposit.png" alt="">
+                <p class="steps__item-text">Top 12 coins for your ultimate trading</p>
               </div><a class="btn steps__btn" href="#">Start Now</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer">
+        <div class="accept">
+          <div class="container">
+            <h2 class="title title_footer">We accept</h2>
+            <div class="accept__imgs"><img class="accept__visa" data-src="img/visa.png" alt=""><img class="accept__master" data-src="img/mastercard.svg" alt=""><img class="accept__btc" data-src="img/btc.svg" alt=""><img class="accept__eth" data-src="img/eth.png" alt=""></div>
+          </div>
+        </div>
+        <div class="out">
+          <div class="container out__container"><img class="out__img" data-src="img/screen.jpg" alt="">
+            <div class="form"></div>
+          </div>
+        </div>
+        <div class="trust">
+          <div class="container">
+            <h2 class="title title_footer">Traders trust us</h2>
+            <div class="trust__imgs"><img src="" data-src="img/trustpilot.png" alt=""><img data-src="img/g2.png" alt=""><img data-src="img/review.png" alt=""></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script>new LazyLoad();</script>
   </body>
 </html>
