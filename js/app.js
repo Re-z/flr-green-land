@@ -12,6 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     showSelect();
-
-
 })
